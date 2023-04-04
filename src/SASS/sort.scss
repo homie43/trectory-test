@@ -1,0 +1,54 @@
+.sort {
+  position: relative;
+  margin-bottom: 80px;
+  &__label {
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-right: 8px;
+    }
+
+    b {
+      margin-right: 8px;
+    }
+
+    span {
+      color: var(--primary-color);
+      border-bottom: 1px dashed var(--primary-color);
+      cursor: pointer;
+    }
+  }
+
+  &__popup {
+    position: absolute;
+    margin-top: 15px;
+    background: #ffffff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px 0;
+    width: 174px;
+
+    ul {
+      overflow: hidden;
+      padding-left: 0;
+      margin-bottom: 0;
+      li {
+        text-align: center;
+        padding: 12px 20px;
+        cursor: pointer;
+
+        &.active,
+        &:hover {
+          background: rgba(254, 95, 30, 0.05);
+        }
+
+        &.active {
+          font-weight: bold;
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+}

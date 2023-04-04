@@ -1,0 +1,31 @@
+.product {
+  &__item {
+    box-shadow: 7px 20px 10px -5px rgba(34, 60, 80, 0.093);
+  }
+  &__info {
+    h3 {
+      font-size: 1.2rem;
+      color: var(--primary-color);
+      font-weight: 600;
+      margin-top: 15px;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  &__card-bottom {
+    .price {
+      color: var(--primary-color);
+      font-size: 1.3rem;
+      font-weight: 500;
+    }
+
+    span i {
+      font-size: 2rem;
+      padding: 7px;
+      cursor: pointer;
+    }
+  }
+}
